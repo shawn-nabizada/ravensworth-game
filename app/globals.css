@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    background-color: #0b0a08;
+    color: #e8dcc0;
+    min-height: 100%;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, .serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer components {
+  .vignette {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.75) 100%);
+  }
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(1rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .scrollbar-noir::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-noir::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-noir::-webkit-scrollbar-thumb {
+    background: rgba(200, 155, 60, 0.3);
+    border-radius: 4px;
+  }
+  .scrollbar-noir::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 155, 60, 0.6);
+  }
+}

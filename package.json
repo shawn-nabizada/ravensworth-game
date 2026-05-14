@@ -1,0 +1,23 @@
+{
+  "name": "ravensworth-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student starter for the Ravensworth Manor workshop — an AI-powered noir detective game built with the Gemini API.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  }
+}
